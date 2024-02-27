@@ -1,0 +1,37 @@
+ТЗ:
+
+1. Чистий проект, нова БД
+2. Розробити додаток, який реалізує наступний функціонал:
+
+1. User
+- firstName
+- lastName
+*- email,
+- gender
+- favouriteFilms: []
+
+
+2. Movie
+*- name
+- director
+- studio
+- genre: []
+- prodictionDate
+- duration - Number, >0
+- actors: []
+- rating - Number, 0-10
+
+Фільм можна взяти напрокат.
+
+3. Rent
+- фільм (Movie), який беруть напрокат: Movie
+- Юзер, який бере напрокат кіно: User
+- дата оренди: Date
+- дедлайн: Date
+- статус: ['taken', 'returned', 'failed'], 
+    - default: taken
+
+
+Таска ч.2:
+Створити модель Rent, і зв'язати її з іншими моделями
+Розробити create, update, getOne

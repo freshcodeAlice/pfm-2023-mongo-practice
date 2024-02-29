@@ -1,0 +1,7 @@
+POST http://localhost:5000/api/rent/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "movie": "65e03a076ec9806ad8105413",
+    "user": "65ddac9e09e275103b37f8dd"
+}

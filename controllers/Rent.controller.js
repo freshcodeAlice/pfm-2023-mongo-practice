@@ -20,10 +20,14 @@ module.exports.getOne = async (req, res, next) => {
     }
 }
 
-module.exports.getAllUserRent = async (req, res, next) => {
+module.exports.getAllUserRents = async (req, res, next) => {
     try {
         const {params: {userId}} = req;
         // повернути всі ренди цього користувача
+        const allRents = await Rent.find({
+            user: userId
+        }).populate('user').populate('movie');
+        res.status(200).send({data: allRents})
     } catch(error) {
         next(error)
     }
@@ -41,5 +45,6 @@ module.exports.update = async (req, res, next) => {
 /*
 Написати методи контроллера:
 1. Переробити getOne з заселенням обох полів
-2. Доробити метод getAllUserRent, який повертає всі rent конретного юзера
+2. Доробити метод getAllUserRents, який повертає всі rent конретного юзера
 */
+

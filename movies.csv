@@ -1,0 +1,4 @@
+id,name,director,studio,genre,production_date,duration,actors,rating,created_at,updated_at
+1,Superfilm,Tarantino,Fox,thriller,,,,,2024-03-01 10:04:45.301+02,2024-03-01 10:04:45.301+02
+2,Another film,Scorcese,Marvel,epic,,,,,2024-03-01 10:23:52.943+02,2024-03-01 10:23:52.943+02
+3,Thrid film,Npone,Marvel,epic,,,,,2024-03-01 10:28:45.156+02,2024-03-01 10:28:45.156+02

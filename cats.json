@@ -1,0 +1,5 @@
+{"_id":{"$oid":"65d8606af3cfe59bf41aed65"},"name":"Murzik","age":3,"color":"red","favouriteFood":[],"__v":0}
+{"_id":{"$oid":"65d860a6f3cfe59bf41aed67"},"name":"Barsik","age":2,"color":"white","favouriteFood":[],"favouriteGame":"mouse","__v":0}
+{"_id":{"$oid":"65d86138f3cfe59bf41aed6a"},"name":"Barsik","age":2,"color":"white","favouriteFood":[],"__v":0,"newCatKey":"super-important-value"}
+{"_id":{"$oid":"65d8650d81dc6ac6061480ae"},"name":"Tuzik","age":2,"color":"white","favouriteFood":[],"__v":0,"owner":{"$oid":"65dc61121f8a4ad41cf0273b"}}
+{"_id":{"$oid":"65dc614c1a6db774fdd8dd1f"},"name":"Murka","age":3,"color":"white","favouriteFood":[],"owner":{"$oid":"65dc61121f8a4ad41cf0273b"},"__v":0}

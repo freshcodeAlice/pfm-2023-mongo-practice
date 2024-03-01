@@ -1,5 +1,29 @@
+///Експорт та імпорт даних з монго
+
 db;
+// from: pfm2023-db
+// to: pfm-mongo-practice
 
 use pfm-mongo-practice;
 
-db.rents.find();
+show collections;
+
+db.cats.find();
+
+// Поточна база даних мість колекцію cats, в якій 5 документів
+// Експорт з бд pfm2023
+mongoexport --host 127.0.0.1 --db pfm2023-db --collection cats --type=csv --out ./cats.csv --fields name,age,color,favouriteFood
+
+// Імпорт до БД pfm-mongo-practice
+
+mongoimport --host 127.0.0.1 --db pfm-mongo-practice --collection cats --type=csv --file ./cats.csv --fields name,age,color,favouriteFood
+
+
+// JSON кращий для імпорта mongo
+
+mongoexport --host 127.0.0.1 --db pfm2023-db --collection cats --type=json --out ./cats.json
+
+db.cats.drop();
+
+
+/// Таска: експортувати юзерів зі старої монго-бд і імпортувати в поточну бд

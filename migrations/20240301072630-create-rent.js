@@ -13,7 +13,7 @@ module.exports = {
         field: 'movie_id',
         type: Sequelize.INTEGER,
         references: {
-          model: 'Movie',
+          model: 'movies',
           key: 'id'
         }
       },
@@ -21,11 +21,11 @@ module.exports = {
         field: 'user_id',
         type: Sequelize.INTEGER,
         references: {
-          model: 'User',
+          model: 'users',
           key: 'id'
         }
       },
-      dealine: {
+      deadline: {
         type: Sequelize.DATE
       },
       status: {

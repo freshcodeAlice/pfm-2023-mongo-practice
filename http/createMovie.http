@@ -2,8 +2,8 @@ POST http://localhost:5000/api/movies HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Superfilm",
-    "director": "Tarantino",
-    "studio": "Fox",
-    "genre": ["thriller"]
+    "name": "Thrid film",
+    "director": "Npone",
+    "studio": "Marvel",
+    "genre": "epic"
 }

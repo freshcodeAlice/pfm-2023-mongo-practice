@@ -1,1 +1,1 @@
-GET http://localhost:5000/api/rent/user/65ddac9e09e275103b37f8dd HTTP/1.1
+GET http://localhost:5000/api/rent/user/1 HTTP/1.1

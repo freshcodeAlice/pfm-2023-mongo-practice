@@ -1,4 +1,4 @@
-const {Rent, User, Movie} = require('../models');
+const {Rent, User, Movie} = require('../models/mongModels');
 
 module.exports.createRent = async (req, res, next) => {
     try {
